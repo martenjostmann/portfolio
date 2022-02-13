@@ -1,5 +1,4 @@
-name: DEPLOY TO STAGING
-
+name: Deploy
 on:
   push:
     branches: [ master ]
@@ -7,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  app-build:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2.4.0
