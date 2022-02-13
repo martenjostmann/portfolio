@@ -1,0 +1,29 @@
+name: DEPLOY TO STAGING
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  firebase-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+      - name: Installing project dependencies
+      - run: npm install
+      - name: Building the project
+      - run: npm run build
+      
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.2.0
+        with:
+          server: ${{ secrets.FTP_IP }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: martenjostmann.de/
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
