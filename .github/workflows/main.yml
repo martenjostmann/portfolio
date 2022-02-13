@@ -11,12 +11,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2.4.0
       - uses: actions/setup-node@v2.5.1
-        with:
-            node-version: '12'
       - name: Npm install & npm build
         run: 
           npm install
-          vue-cli-service build
+          npm run build
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
