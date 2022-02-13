@@ -6,11 +6,13 @@ on:
       - master
 
 jobs:
-  firebase-deploy:
+  app-build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - uses: actions/setup-node@master
+      - uses: actions/checkout@v2.4.0
+      - uses: actions/setup-node@v2.5.1
+        with:
+            node-version: '12'
       - name: Installing project dependencies
       - run: npm install
       - name: Building the project
