@@ -18,12 +18,12 @@ jobs:
           npm install
           npm run build
       - name: Create dist dir
-        run: mkdir dist
+        run: mkdir ./dist/
       - name: Archive production artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: dist-without-markdown
-          path: dist
+          name: dist
+          path: ./dist/
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
