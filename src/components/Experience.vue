@@ -24,7 +24,7 @@
                   <v-card-title class="text-h5">
                     Intern - Viadee
                   </v-card-title>
-                  <v-card-text>Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.</v-card-text>
+                  <v-card-text>Als Berater in dem Bereich Data Science erstelle ich vor allem Proof of Concepts für diverse Firmen im Umkreis von Münster. Hierbei sind meine Aufgaben unter anderem die Potenzialanalyse als auch die spätere Umsetzung.</v-card-text>
                 </v-card>
               </v-timeline-item>
 
@@ -43,7 +43,7 @@
                   <v-card-title class="text-h5">
                     Freiberuflicher Softwaretest - uTest
                   </v-card-title>
-                  <v-card-text>Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.</v-card-text>
+                  <v-card-text>Als Freiberuflicher Softwaretester unterstütze ich Firmen über die Plattform uTest bei der Wartung und Qualitätssicherung, sowie bei der Sicherstellung einer Benutzerfreundlichen Umgebung.</v-card-text>
                 </v-card>
               </v-timeline-item>
 
@@ -60,7 +60,7 @@
                   <v-card-title class="text-h5">
                     Projektleiter - Geomi Games
                   </v-card-title>
-                  <v-card-text>Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.</v-card-text>
+                  <v-card-text>In diesem Projekt habe ich zusammen mit einem Team aus 15 Personen ein Kartenspiel entwickelt, welches mit der Hilfe einer mobilen Anwendung gespielt werden konnte. In diesem Projekt habe ich das Team organisiert und war leitender Entwickler.</v-card-text>
                 </v-card>
               </v-timeline-item>
 

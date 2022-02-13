@@ -14,7 +14,7 @@
         </p>
         <hr class='title_line' />
         <v-content class="mt-5 text-justify">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Im Rahmen meines Wirtschaftsinformatik Studiums an der WWU habe ich den umfassenden Bereich Data-Science für mich entdeckt. Aktuelle Probleme der Wirtschaftsinformatik und die steigende Verfügbarkeit von Daten erfordern moderne ki-gestützte Lösungsansätze, um die massiven Datenmengen für sich nutzen zu können. 
         </v-content>
         
       </v-col>
