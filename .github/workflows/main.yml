@@ -23,10 +23,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: dist-without-markdown
-          path: |
-            dist
-              !dist/**/*.md
-      
+          path: dist
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.2.0
         with:
