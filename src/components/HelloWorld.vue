@@ -2,12 +2,31 @@
   <div>
     <v-img 
     id="scrolling-techniques-7"
-    class=""
+    class="d-none d-md-flex"
     width="100%"
     :src="require('../images/header_page.png')"
     />
 
-    <v-row class="mt-n15">
+    <v-img 
+    id="scrolling-techniques-7"
+    class="d-md-none d-sm-flex"
+    width="100%"
+    :src="require('../images/header_page_sm.png')"
+    />
+
+    <v-row justify="space-around" class="d-md-none d-sm-flex">
+      <v-avatar
+        color="white"
+        size="250"
+      >
+        <img
+          src="../images/profile_picture_bg.jpg"
+        >
+      
+      </v-avatar>
+    </v-row>
+
+    <v-row class="mt-lg-n14 mt-md-n9 d-none d-md-flex">
       <v-col md="4" class="welcome_text text-center mt-n6">
         <p class="text-h4 font-weight-light">
           Hallo, ich bin
@@ -60,7 +79,7 @@
       </v-col>
     </v-row>
 
-    <p class="text-h2 text-center mt-8">
+    <p class="text-sm-h2 text-h3 text-center mt-8">
       Marten Jostmann
     </p>
     <p class="text-h4 font-weight-light text-center mt-3">
@@ -101,6 +120,11 @@
 
 .social_icons{
   margin-top: -85px;
+}
+
+.v-avatar{
+  border: 5px solid;
+  margin-top: -125px;
 }
 
 

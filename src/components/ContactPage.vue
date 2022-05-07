@@ -1,7 +1,7 @@
 <template>
     <v-row class="contact mt-15">
         <v-spacer />
-        <v-col md="8">
+        <v-col md="8" cols="10">
             <p class="text-h4 mt-15">
             Kontakt
             </p>
@@ -20,7 +20,7 @@
                 <v-spacer />
             </v-row>
             <v-row class="mb-10">
-                <v-spacer />
+                <v-spacer class="d-none d-md-flex"/>
                 <v-col md="8" class="pl-15 mt-n6 text-center">
                     <v-btn
                     class="ma-2"
@@ -64,7 +64,7 @@
                     </v-icon>
                     </v-btn>
                 </v-col>
-                <v-spacer />
+                <v-spacer class="d-none d-md-flex"/>
             </v-row>
         </v-col>
         <v-spacer />
