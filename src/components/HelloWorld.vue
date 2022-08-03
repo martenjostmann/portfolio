@@ -29,7 +29,7 @@
     <v-row class="mt-lg-n14 mt-md-n9 d-none d-md-flex">
       <v-col md="4" class="welcome_text text-center mt-n6">
         <p class="text-h4 font-weight-light">
-          Hallo, ich bin
+           {{ $t('home.hello')}}
         </p>
       </v-col>
       <v-spacer>
@@ -80,10 +80,10 @@
     </v-row>
 
     <p class="text-sm-h2 text-h3 text-center mt-8">
-      Marten Jostmann
+      {{ $t('home.name')}}
     </p>
     <p class="text-h4 font-weight-light text-center mt-3">
-      Data Scientist
+      {{ $t('home.job')}}
     </p>
 
     <div class="text-center">
@@ -95,7 +95,7 @@
       color="primary"
       href="mailto:marten.jostmann@gmail.com"
       >
-        Schreib mir
+        {{ $t('home.write_me')}}
       </v-btn>
 
     </div>

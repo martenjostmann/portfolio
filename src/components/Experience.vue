@@ -3,7 +3,7 @@
         <v-spacer />
         <v-col md="8" cols="10">
           <p class="text-h4 mt-15">
-            Berufserfahrung
+            {{ $t('experience.experience')}}
           </p>
           <hr class='title_line' />
 
@@ -18,13 +18,13 @@
                   </v-avatar>
                 </template>
                 <template v-slot:opposite>
-                  <span>Apr. 2022 - heute</span>
+                  <span>{{$t('general.april_short')}} 2022 - {{$t('general.today')}}</span>
                 </template>
                 <v-card class="elevation-2">
                   <v-card-title class="text-h5" style="word-break: break-word">
-                    Werkstudent - Viadee
+                    {{ $t('experience.working_student', {company: "Viadee"})}}
                   </v-card-title>
-                  <v-card-text class="text-wrap">Als Berater in dem Bereich Data Science erstelle ich vor allem Proof of Concepts für diverse Firmen im Umkreis von Münster. Hierbei sind meine Aufgaben unter anderem die Potenzialanalyse als auch die spätere Umsetzung.</v-card-text>
+                  <v-card-text class="text-wrap">{{ $t('experience.viadee_working_student_tasks')}}</v-card-text>
                 </v-card>
               </v-timeline-item>
               
@@ -37,13 +37,13 @@
                   </v-avatar>
                 </template>
                 <template v-slot:opposite>
-                  <span>Okt. 2021 - Mär. 2022</span>
+                  <span>{{$t('general.october_short')}} 2021 - {{$t('general.march_short')}} 2022</span>
                 </template>
                 <v-card class="elevation-2">
                   <v-card-title class="text-h5" style="word-break: break-word">
-                    Intern - Viadee
+                    {{ $t('experience.intern', {company: "Viadee"})}}
                   </v-card-title>
-                  <v-card-text>Entwicklung eines Produktes, dass Bilder und Schlüsselinformationen in schlecht und vielfältig strukturierten PDF-Dateien erkennt und extrahiert, sowie zu beteiligten Fahrzeugen clustert, um Begutachtungs-Prozesse im Bereich KfZ-Unfallschäden effizienter zu gestalten.</v-card-text>
+                  <v-card-text>{{ $t('experience.viadee_intern_tasks')}}</v-card-text>
                 </v-card>
               </v-timeline-item>
 
@@ -56,13 +56,13 @@
                   </v-avatar>
                 </template>
                 <template v-slot:opposite>
-                  <span>Okt. 2018 - heute</span>
+                  <span>{{$t('general.october_short')}} 2018 - {{$t('general.today')}}</span>
                 </template>
                 <v-card class="elevation-2">
                   <v-card-title class="text-h5" style="word-break: break-word">
-                    Freiberuflicher Softwaretest - uTest
+                    {{ $t('experience.freelance', {company: "uTest"})}}
                   </v-card-title>
-                  <v-card-text>Als Freiberuflicher Softwaretester unterstütze ich Firmen über die Plattform uTest bei der Wartung und Qualitätssicherung, sowie bei der Sicherstellung einer Benutzerfreundlichen Umgebung.</v-card-text>
+                  <v-card-text>{{ $t('experience.utest_freelance_tasks')}}</v-card-text>
                 </v-card>
               </v-timeline-item>
 
@@ -73,13 +73,13 @@
          
                 </template>
                 <template v-slot:opposite>
-                  <span>Aug. 2016 - Aug. 2017</span>
+                  <span>{{$t('general.august_short')}} 2016 - {{$t('general.august_short')}} 2017</span>
                 </template>
                 <v-card class="elevation-2">
                   <v-card-title class="text-h5" style="word-break: break-word">
-                    Projektleiter - Geomi Games
+                    {{ $t('experience.project_leader', {company: "Geomi Games"})}}
                   </v-card-title>
-                  <v-card-text>In diesem Projekt habe ich zusammen mit einem Team aus 15 Personen ein Kartenspiel entwickelt, welches mit der Hilfe einer mobilen Anwendung gespielt werden konnte. In diesem Projekt habe ich das Team organisiert und war leitender Entwickler.</v-card-text>
+                  <v-card-text>{{ $t('experience.geomigames_leader_tasks')}}</v-card-text>
                 </v-card>
               </v-timeline-item>
 

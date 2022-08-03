@@ -1,0 +1,54 @@
+{
+  "general": {
+    "january_short": "Jan.",
+    "februrary_short": "Feb.",
+    "march_short": "Mär.",
+    "april_short": "Apr.",
+    "may_short": "Mai.",
+    "june_short": "Jun.",
+    "jule_short": "Jul.",
+    "august_short": "Aug.",
+    "september_short": "Sep.",
+    "october_short": "Okt.",
+    "november_short": "Nov.",
+    "december_short": "Dez.",
+    "today": "heute"
+  },
+  "header": {
+    "home": "Home",
+    "about_me": "Über mich",
+    "experience": "Berufserfahrung",
+    "education": "Ausbildung",
+    "skills": "Skills",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "hello": "Hallo, ich bin",
+    "name": "Marten Jostmann",
+    "job": "Data Scientist",
+    "write_me": "Schreib mir"
+  },
+  "about": {
+    "about_me": "Über mich",
+    "about_text": "Im Rahmen meines Wirtschaftsinformatik Studiums an der WWU habe ich den umfassenden Bereich Data-Science für mich entdeckt. Das Lösen herausfordernder und spannender Aufgaben und das Entdecken von Zusammenhängen in Daten und Prozessen, die den Kunden voranbringen, sind für mich die treibende Motivation."
+  },
+  "experience": {
+    "experience": "Berufserfahrung",
+    "working_student": "Werkstudent - {company}",
+    "intern": "Intern - {company}",
+    "freelance": "Freiberuflicher Softwaretester - {company}",
+    "project_leader": "Projektleiter - {company}",
+    "viadee_working_student_tasks": "Als Berater in dem Bereich Data Science erstelle ich vor allem Proof of Concepts für diverse Firmen im Umkreis von Münster. Hierbei sind meine Aufgaben unter anderem die Potenzialanalyse als auch die spätere Umsetzung.",
+    "viadee_intern_tasks": "Entwicklung eines Produktes, dass Bilder und Schlüsselinformationen in schlecht und vielfältig strukturierten PDF-Dateien erkennt und extrahiert, sowie zu beteiligten Fahrzeugen clustert, um Begutachtungs-Prozesse im Bereich KfZ-Unfallschäden effizienter zu gestalten.",
+    "utest_freelance_tasks": "Als Freiberuflicher Softwaretester unterstütze ich Firmen über die Plattform uTest bei der Wartung und Qualitätssicherung, sowie bei der Sicherstellung einer Benutzerfreundlichen Umgebung.",
+    "geomigames_leader_tasks": "In diesem Projekt habe ich zusammen mit einem Team aus 15 Personen ein Kartenspiel entwickelt, welches mit der Hilfe einer mobilen Anwendung gespielt werden konnte. In diesem Projekt habe ich das Team organisiert und war leitender Entwickler."
+  },
+  "education": {
+    "education": "Ausbildung",
+    "wwu": "Westfälische Wilhelms-Universität Münster"
+  },
+  "contact": {
+    "contact": "Kontakt",
+    "speak_together": "Lass uns drüber sprechen"
+  }
+}

@@ -11,11 +11,11 @@
       </v-col>
       <v-col md='4' sm='8' cols='10'>
         <p class="text-h4">
-          Über mich
+          {{ $t('about.about_me')}}
         </p>
         <hr class='title_line' />
         <v-content class="mt-5 mb-md-0 mb-10 text-justify">
-            Im Rahmen meines Wirtschaftsinformatik Studiums an der WWU habe ich den umfassenden Bereich Data-Science für mich entdeckt.. Das Lösen herausfordernder und spannender Aufgaben und das Entdecken von Zusammenhängen in Daten und Prozessen, die den Kunden voranbringen, sind für mich die treibende Motivation
+            {{ $t('about.about_text')}}
         </v-content>
         
       </v-col>

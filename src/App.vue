@@ -19,14 +19,14 @@
         :color="scrollPosition > 50 ? 'primary' : 'white'"
       >
           <v-tab v-for="item in menuItems" :key="item.title" @click="scrollMeTo(item.scroll)">
-            {{item.title}}
+            {{$t(item.title)}}
           </v-tab>
        
       </v-tabs>
 
       <v-spacer></v-spacer>
 
-      <v-btn icon>
+      <v-btn icon @click="switchLocale()">
         <v-icon 
           :color="scrollPosition > 50 ? 'gray' : 'white'"
         >
@@ -51,7 +51,7 @@
         v-model="tab"
         >
           <v-list-item v-for="item in menuItems" :key="item">
-            <v-list-item-title @click="scrollMeTo(item.scroll)">{{ item.title }}</v-list-item-title>
+            <v-list-item-title @click="scrollMeTo(item.scroll)">{{$t(item.title)}}</v-list-item-title>
           </v-list-item>
 
         </v-list-item-group>
@@ -175,23 +175,23 @@ export default {
         'scroll': 'home',
       },
       {
-        'title': 'Über mich',
+        'title': 'header.about_me',
         'scroll': 'about-me',
       },
       {
-        'title': 'Berufserfahrung',
+        'title': 'header.experience',
         'scroll': 'experience',
       },
       {
-        'title': 'Ausbildung',
+        'title': 'header.education',
         'scroll': 'education',
       },
       {
-        'title': 'Skills',
+        'title': 'header.skills',
         'scroll': 'skills',
       },
       {
-        'title': 'Kontakt',
+        'title': 'header.contact',
         'scroll': 'contact',
       },
     ]
@@ -213,6 +213,16 @@ export default {
           window.scrollTo({ top: position, behavior: "smooth" });
           this.scroll=true;
     },
+
+    // switch locales
+    switchLocale() {
+      if (this.$i18n.locale == "de") {
+        this.$i18n.locale = "en"
+      }else {
+        this.$i18n.locale = "de"
+      }
+      
+    }
     
   }
 };

@@ -3,7 +3,7 @@
         <v-spacer />
         <v-col md="8" cols="10">
             <p class="text-h4 mt-15">
-            Kontakt
+            {{$t('contact.contact')}}
             </p>
             <hr class='title_line' />
 
@@ -11,7 +11,7 @@
                 <v-spacer />
                 <v-col md=8 class="text-center">
                     <p class="text-h5">
-                        Lass uns drüber sprechen
+                        {{$t('contact.speak_together')}}
                     </p>
                     <p class="subtile-1 email_sub">
                         marten.jostmann@gmail.com
