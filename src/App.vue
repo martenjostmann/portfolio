@@ -7,32 +7,56 @@
       :elevation="scrollPosition > 50 ? '50' : '0'"
       :color="scrollPosition > 50 ? 'white' : 'transparent'"
     >
+      <v-app-bar-nav-icon @click="drawer = true" 
+                           class="d-flex d-md-none"
+                           :color="scrollPosition > 50 ? 'gray' : 'white'"
+                           ></v-app-bar-nav-icon>
       <v-tabs 
         v-model="tab"
+        class="d-none d-md-inline"
         background-color="transparent"
         centered
         :color="scrollPosition > 50 ? 'primary' : 'white'"
       >
-          <v-tab @click="scrollMeTo('home')">Home</v-tab>
-          <v-tab @click="scrollMeTo('about-me')">Über mich</v-tab>
-          <v-tab @click="scrollMeTo('experience')">Berufserfahrung</v-tab>
-          <v-tab @click="scrollMeTo('education')">Ausbildung</v-tab>
-          <v-tab @click="scrollMeTo('skills')">Skills</v-tab>
-          <v-tab @click="scrollMeTo('contact')">Kontakt</v-tab>
+          <v-tab v-for="item in menuItems" :key="item.title" @click="scrollMeTo(item.scroll)">
+            {{$t(item.title)}}
+          </v-tab>
        
       </v-tabs>
 
       <v-spacer></v-spacer>
 
-      <v-btn icon>
+      <v-btn icon @click="switchLocale()">
         <v-icon 
           :color="scrollPosition > 50 ? 'gray' : 'white'"
         >
           mdi-translate
         </v-icon>
       </v-btn>
+      
 
     </v-app-bar>
+
+    <v-navigation-drawer
+      v-model="drawer"
+      absolute
+      temporary
+      style="position:fixed; top:0; left:0;"
+    >
+      <v-list
+        nav
+        dense
+      >
+        <v-list-item-group
+        v-model="tab"
+        >
+          <v-list-item v-for="item in menuItems" :key="item">
+            <v-list-item-title @click="scrollMeTo(item.scroll)">{{$t(item.title)}}</v-list-item-title>
+          </v-list-item>
+
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer> 
 
     <v-content>
       <section id="home" >
@@ -143,7 +167,35 @@ export default {
 
   data: () => ({
     scrollPosition: null,
-    scroll:true
+    scroll:true,
+    drawer: false,
+    menuItems: [
+      {
+        'title': 'Home',
+        'scroll': 'home',
+      },
+      {
+        'title': 'header.about_me',
+        'scroll': 'about-me',
+      },
+      {
+        'title': 'header.experience',
+        'scroll': 'experience',
+      },
+      {
+        'title': 'header.education',
+        'scroll': 'education',
+      },
+      {
+        'title': 'header.skills',
+        'scroll': 'skills',
+      },
+      {
+        'title': 'header.contact',
+        'scroll': 'contact',
+      },
+    ]
+
   }),
 
   methods: {
@@ -152,12 +204,25 @@ export default {
     },
 
     scrollMeTo(refName) {
+
+        this.drawer = false;
+
         const position = document.getElementById(refName).offsetTop;
           // smooth scroll
           this.scroll=false;
           window.scrollTo({ top: position, behavior: "smooth" });
           this.scroll=true;
     },
+
+    // switch locales
+    switchLocale() {
+      if (this.$i18n.locale == "de") {
+        this.$i18n.locale = "en"
+      }else {
+        this.$i18n.locale = "de"
+      }
+      
+    }
     
   }
 };
