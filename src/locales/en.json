@@ -38,14 +38,14 @@
       "intern": "Intern - {company}",
       "freelance": "Freelance Softwaretester - {company}",
       "project_leader": "Prokect Leader - {company}",
-      "viadee_working_student_tasks": "Als Berater in dem Bereich Data Science erstelle ich vor allem Proof of Concepts für diverse Firmen im Umkreis von Münster. Hierbei sind meine Aufgaben unter anderem die Potenzialanalyse als auch die spätere Umsetzung.",
+      "viadee_working_student_tasks": "As a consultant in the field of data science, I mainly create proof of concepts for various companies in the Münster area. My tasks include the potential analysis as well as the subsequent implementation.",
       "viadee_intern_tasks": "Development of a product that recognizes and extracts images and key information in poorly and diversely structured PDF files and clusters them to involved vehicles in order to make appraisal processes in the field of motor vehicle accident claims more efficient.",
       "utest_freelance_tasks": "As a freelance software tester, I support companies via the uTest platform in maintenance and quality assurance, as well as ensuring a user-friendly environment.",
       "geomigames_leader_tasks": "In this project, I worked with a team of 15 people to develop a card game that could be played with the help of a mobile application. In this project I organized the team and was the lead developer."
     },
     "education": {
       "education": "Education",
-      "wwu": "Westfälische Wilhelms-University Münster"
+      "wwu": "University Münster"
     },
     "contact": {
       "contact": "Contact",
